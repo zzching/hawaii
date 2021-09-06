@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 1.5px 1.5px 3px #757575;
+  box-shadow: 1.5px 1.5px 3px #757575;
+  z-index: 5;
+  background-color: white;
+}
+
+header div.logo {
+  -webkit-box-flex: 5;
+  -ms-flex: 5 1 300px;
+  flex: 5 1 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+header div.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+
+header nav {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 350px;
+  flex: 1 1 350px;
+  text-decoration: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+header nav ul li a {
+  color: #1f9377;
+  text-decoration: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+header nav ul li a:hover {
+  color: #41bb9f;
+}
+
+main div.imgbox {
+  height: 50vw;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../Pictures/background.jpeg);
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+main div.imgbox h2 {
+  color: white;
+  margin: 1rem 0rem;
+  font-size: 3.5rem;
+}
+
+main div.imgbox button.btn {
+  background-color: #00d1ff;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 2rem;
+  color: #183263;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem 0rem;
+}
+
+main div.imgbox button.btn:hover {
+  background-color: #6ae4ff;
+  color: #2b3f64;
+}
+
+div.sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+div.sec h3 {
+  font-size: 2rem;
+  margin: 1.2rem 1rem;
+}
+
+div.sec div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+div.sec div.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 250px;
+  flex: 1 1 250px;
+}
+
+div.sec div.cards div.card img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+div.sec div.cards div.card h4 {
+  font-size: 2rem;
+}
+
+div.sec div.cards div.card p {
+  font-size: 1.2rem;
+}
+
+div.sec div.cards div.card a {
+  text-decoration: none;
+  background-color: #1f9377;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+div.sec div.cards div.card a:hover {
+  background-color: #41bb9f;
+}
+
+.imgfilter {
+  height: 50vw;
+  width: 100%;
+  background: rgba(101, 101, 101, 0.178);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+footer {
+  background-color: #e5e5e5;
+  min-height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+footer div.footer_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer div.footer_logo img {
+  height: 6vw;
+  width: 6vw;
+}
+
+footer div.footer_text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer div.footer_text ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin: 0rem 0.5rem;
+}
+
+footer div.footer_text ul li a:hover {
+  color: #8a8a8a;
+}
+
+footer div.footer_social img {
+  height: 3.5vw;
+  width: 3.5vw;
+  margin: 0.8rem 1.8rem;
+}
+footer div.footer_social p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  main div.imgbox h2 {
+    font-size: 3rem;
+  }
+  main div.sec h3 {
+    font-size: 1.7rem;
+  }
+  main div.sec div.cards div.card img {
+    width: 30vw;
+    height: 30vw;
+  }
+  main div.sec div.cards div.card h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header div.logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  main div.imgbox button.btn {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main div.imgbox h2 {
+    font-size: 1.9rem;
+  }
+  main div.imgbox button.btn {
+    background-color: #00d1ff;
+    border: none;
+    padding: 0.4rem 1rem;
+    font-size: 1.3rem;
+    color: #183263;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 1rem 0rem;
+  }
+  main div.sec h3 {
+    font-size: 1.5rem;
+  }
+  main div.sec div.cards div.card img {
+    width: 45vw;
+    height: 45vw;
+    margin: 1rem 0rem;
+  }
+  main div.sec div.cards div.card h4 {
+    font-size: 1.5rem;
+  }
+  main div.sec div.cards div.card p {
+    margin: 1rem 0rem;
+  }
+  footer div.footer_social a img {
+    width: 6vw;
+    height: 6vw;
+    margin: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  header div.logo h1 {
+    font-size: 1.5rem;
+  }
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+  main div.imgbox {
+    height: 70vw;
+    width: 100%;
+  }
+  main div.imgbox h2 {
+    font-size: 1.6rem;
+  }
+  main div.imgbox button.btn {
+    background-color: #00d1ff;
+    border: none;
+    padding: 0.3rem 1rem;
+    font-size: 1.2rem;
+    color: #183263;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  main div.sec div.cards div.card a {
+    text-decoration: none;
+    background-color: #1f9377;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+  }
+  footer div.footer_logo h1 {
+    font-size: 1.3rem;
+  }
+  footer div.footer_text nav ul li a {
+    font-size: 1rem;
+  }
+  footer div.footer_social a img {
+    width: 6vw;
+    height: 6vw;
+    margin: 0rem 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
